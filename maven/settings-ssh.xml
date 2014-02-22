@@ -1,0 +1,14 @@
+<settings>
+  <servers>
+    <server>
+      <id>ssh.maven.irgaly</id>
+      <username>maven</username>
+      <privateKey>${user.home}/ssh/ssh-maven.key</privateKey>
+      <passphrase></passphrase>
+      <configuration>
+        <scpExecutable>sftp</scpExecutable>
+        <scpArgs>-o StrictHostKeyChecking=no</scpArgs>
+      </configuration>
+    </server>
+  </servers>
+</settings>
